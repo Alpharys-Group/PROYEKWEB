@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "PROYEKWEB",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
