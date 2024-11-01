@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlpharysGroup.com</title>
+    <link rel="stylesheet" href="../styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0-beta3/css/all.min.css">
+</head>
+<body>
+	<!-- Audio element with autoplay -->
+<audio id="backgroundMusic" autoplay loop>
+	<source src="../audio/musik.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio>
+
+<!-- Control button for play/pause with icon -->
+<div id="musicControl">
+	<i id="musicIcon" class="fas fa-play"></i> <!-- Icon starts as pause -->
+</div>
+
+    <header class="header">
+	<div class="logo-container">
+		<h1 class="group-name">Application Project Management</h1>
+	</div>
+	<nav class="navbar">
+		<ul>
+			<li><a href="../home.html">HOME</a></li>
+			<li><a href="appdevpro.html">APPLICATION</a></li>
+			<li><a href="webdevpro.html">WEBSITE</a></li>
+			<li><a href="aidevpro.html">AI</a></li>
+			<li><a href="modsdevpro.html">MOD</a></li>
+			<li><a href="gradespro.html">DESIGN</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div class="modern-container">
+	<!-- Deskripsi Proyek -->
+	<section class="content-box gradient-background">
+	<h2>Pengelolaan Proyek Pengembangan Aplikasi</h2>
+	<p>Proyek pengembangan aplikasi ini merupakan upaya kolaboratif yang dikelola dengan teliti oleh divisi <strong>Alpharys App Technologies</strong>, yang bertanggung jawab atas seluruh proses pengembangan dari tahap perencanaan hingga eksekusi akhir. Sebagai pelopor dalam inovasi teknologi, <strong>Alpharys App Technologies</strong> bekerja sama erat dengan divisi <strong>Alpharys Modder Hub</strong> dan <strong>Alpharys Smart AI</strong> untuk menciptakan solusi yang tidak hanya canggih tetapi juga sangat adaptif terhadap kebutuhan pengguna modern.</p>
+	<p>Dengan memanfaatkan keahlian khusus dalam modifikasi aplikasi dan kecerdasan buatan, proyek ini dirancang untuk menghasilkan aplikasi yang berstandar tinggi, baik dalam performa maupun fungsionalitas. Alpharys Modder Hub berkontribusi dengan menghadirkan kemampuan modifikasi dan personalisasi yang mendalam, sementara Alpharys Smart AI berfokus pada penerapan teknologi kecerdasan buatan yang intuitif dan progresif. Kolaborasi lintas divisi ini memastikan setiap aspek aplikasi diperhatikan secara detail, mencerminkan komitmen kami untuk memberikan pengalaman pengguna yang optimal dan efisien.</p>
+</section>
+	
+<div class="garis-pemisah"></div>
+
+	<!-- Daftar Proyek Sedang Dikembangkan -->
+<section class="content-box gradient-background">
+	<h2>Proyek dalam Pengembangan</h2>
+	<ul>
+		<li>
+			<div class="project-detail">
+				<span class="project-label">Nama Proyek</span>
+				<span class="project-info">:  SA-MP SmartConnect v1.0.0</span>
+			</div>
+			<div class="project-detail">
+				<span class="project-label">Status</span>
+				<span class="project-info">:  Dalam Tahap Pengembangan</span>
+			</div>
+			<div class="project-detail">
+				<span class="project-label">Jenis</span>
+				<span class="project-info">:  Aplikasi Modding dan Integrasi AI untuk SA-MP</span>
+			</div>
+			<div class="project-detail">
+				<span class="project-label">Tanggal Mulai</span>
+				<span class="project-info">:  1 Oktober 2024</span>
+			</div>
+			<div class="project-detail">
+				<span class="project-label">Tanggal Selesai</span>
+				<span class="project-info">:  15 Desember 2024</span>
+			</div>
+			<div class="project-detail">
+				<span class="project-label">Divisi yang Terlibat</span>
+				<span class="project-info">:  Alpharys Modder Hub, Alpharys Smart AI</span>
+			</div>
+		</li>
+	</ul>
+	<div class="divider-line"></div>
+	<p class="no-projects">*Tidak ada proyek lain yang sedang dalam pengembangan saat ini.</p>
+</section>
+	
+	<div class="garis-pemisah1"></div>
+	
+<!-- Portofolio Proyek -->
+<section class="content-box gradient-background">
+	<h2>Portofolio Proyek</h2>
+	<div class="portfolio-slider">
+		<div class="portfolio-wrapper">
+			<div class="portfolio-item" onclick="openModal(0)">
+				<img src="../Images/app1.png" alt="SA-MP SmartConnect" class="portfolio-img">
+				<div class="portfolio-info">
+					<h3>SA-MP SmartConnect v1.0.0</h3>
+					<p>Status: Sedang dalam pengerjaan</p>
+					<p>Jenis: Pengembangan SA-MP</p>
+				</div>
+			</div>
+			<div class="portfolio-item" onclick="openModal()">
+				<img src="../Images/app2.png" alt="SA-MP SmartConnect App 2" class="portfolio-img">
+				<div class="portfolio-info">
+					<h3>SA-MP SmartConnect v1.0.1</h3>
+					<p>Status: Sedang dalam pengerjaan</p>
+					<p>Jenis: Pengembangan SA-MP</p>
+				</div>
+			</div>
+			<!-- Tambahkan lebih banyak item jika diperlukan -->
+		</div>
+	</div>
+</section>
+
+<!-- Modal untuk gambar portofolio -->
+<div id="portfolioModal" class="modal">
+	<span class="close" onclick="closeModal()">&times;</span>
+	<img id="modalImage" src="" alt="Gambar Portofolio">
+	<button class="prev" onclick="changeImage(-1)">&#10094;</button>
+	<button class="next" onclick="changeImage(1)">&#10095;</button>
+</div>
+    
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/6285609405396" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p><i class="fa-regular fa-copyright"></i> 2024 Alpharys Group. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
