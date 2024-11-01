@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlpharysGroup.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0-beta3/css/all.min.css">
+</head>
+<body>
+	<!-- Audio element with autoplay -->
+<audio id="backgroundMusic" autoplay loop>
+	<source src="audio/musik.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio>
+
+<!-- Control button for play/pause with icon -->
+<div id="musicControl">
+	<i id="musicIcon" class="fas fa-play"></i> <!-- Icon starts as pause -->
+</div>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="Images/logo.png" alt="Alpharys Logo" class="logo">
+            <h1 class="group-name">Alpharys Group</h1>
+        </div>
+        
+        <nav class="navbar">
+	<div class="hamburger" id="hamburger"><i class="fa-sharp-duotone fa-solid fa-list fa-lg"></i></div> <!-- Icon hamburger -->
+            <ul>
+	<li><a href="home.html"><i class="fas fa-home fa-xl"></i> HOME</a></li>
+	<li><a href="info.html"><i class="fas fa-info-circle fa-xl"></i> INFORMATION</a></li>
+	<li><a href="#" id="projectHubBtn"><i class="fas fa-project-diagram fa-xl"></i> PROJECT HUB</a></li>
+	<li><a href="#" id="serviceBtn"><i class="fas fa-concierge-bell fa-xl"></i> SERVICES</a></li>
+	<li><a href="#" id="sampBtn"><i class="fas fa-gamepad fa-xl"></i> SA-MP PRO</a></li>
+	<li><a href="#" id="orgBtn"><i class="fas fa-users fa-xl"></i> ORGANIZATION</a></li>
+	<li><a href="partners.html"><i class="fas fa-handshake fa-xl"></i> PARTNERS</a></li>
+</ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="content">
+            <h2>You Are In The Right Place</h2>
+            <p>We are a technology group specializing in application development, websites, AI, modding, and graphic design.</p>
+            <button class="cta-btn"><i class="fa-duotone fa-solid fa-magnifying-glass"></i> Explore Our Services</button>
+        </div>
+    </section>
+    
+<!-- About Alpharys Group -->
+<section class="modern-container">
+	<div class="modern-content">
+		<h2>Who Are We?</h2>
+		<p>Alpharys Group adalah grup yang bergerak di bidang teknologi, pengembangan aplikasi, website, AI, modding, dan desain grafis. Kami juga menawarkan konsultasi dalam bidang yang kami sediakan.</p>
+		<p>Saat ini, grup kami masih dalam tahap awal dan hanya terdiri dari satu anggota, yaitu saya sendiri. Karena keterbatasan biaya, kami belum mampu menjadikan grup ini sebuah perusahaan dan merekrut orang-orang dengan gaji. Namun, Alpharys Group terbuka bagi siapa saja yang ingin bergabung secara sukarela untuk membantu mengembangkan grup ini hingga suatu hari dapat menjadi perusahaan besar.</p>
+		<p>Bergabunglah bersama kami, dan jadilah bagian dari perjalanan menuju inovasi masa depan!</p>
+	</div>
+	
+	<!-- Modern Card to Learn More -->
+	<div class="card-container">
+		<a href="info.html" class="info-card">
+			<h3>Learn More</h3>
+			<p>Discover our goals, vision, and the projects that define us.</p>
+			<div class="arrow-icon">→</div>
+		</a>
+	</div>
+</section>
+
+<section class="particle-divider">
+	<span class="particle">Alpharys</span>
+	<span class="particle">Group</span>
+	<span class="particle">•</span>
+	<span class="particle">•</span>
+	<span class="particle">•</span>
+	<span class="particle">•</span>
+	<span class="particle">•</span>
+	<span class="particle">•</span>
+</section>
+
+<section class="current-projects">
+	<h2>Projects We Work On</h2>
+	<ul>
+		<li>
+			<h3>SA-MP SmartConnect v1.0.0</h3>
+			<p>
+				Kami sedang mengembangkan client SA-MP yang dilengkapi dengan berbagai fitur canggih yang belum pernah ada di client SA-MP mana pun.
+				Proyek ini juga mencakup implementasi fitur-fitur dari client SA-MP versi PC yang dibawa ke dalam platform mobile,
+				memberikan pengalaman bermain yang lebih dinamis dan mendalam. Client SA-MP ini akan menjadi terobosan baru dalam industri gaming,
+				menawarkan fleksibilitas dan kemudahan akses bagi para pengguna mobile.
+			</p>
+		</li>
+		<li>
+			<h3>AlpharysGroup Advanced Website</h3>
+			<p>
+				Kami juga tengah mengerjakan pengembangan website dengan teknologi tercanggih yang belum pernah ada sebelumnya.
+				Website ini akan menawarkan performa terbaik, keamanan tingkat tinggi, dan fitur-fitur yang bisa diakses oleh perusahaan atau individu
+				dengan harga yang terjangkau. Website ini dirancang untuk menjadi solusi ideal bagi siapa saja yang ingin mengembangkan citra digital yang kuat
+				dan fungsionalitas yang lengkap.
+			</p>
+		</li>
+<button class="view-projects-btn" onclick="showToast()">Let's See</button> <!-- Tombol Lihat -->
+</ul>
+</section>
+
+<section class="particle-divider">
+	<span class="particle">Alpharys</span>
+	<span class="particle">Group</span>
+	<span class="particle">•</span>
+	<span class="particle">•</span>
+	<span class="particle">•</span>
+	<span class="particle">•</span>
+	<span class="particle">•</span>
+	<span class="particle">•</span>
+</section>
+
+<!-- Consultation Services Section -->
+<section class="consultation">
+	<h2>Consultation Services</h2>
+	<p>Wujudkan potensi terbaik dari setiap gagasan Anda melalui layanan konsultasi profesional yang ditawarkan oleh Alpharys Group. Meskipun saat ini Alpharys Group belum memiliki anggota tim, seluruh proses konsultasi akan ditangani langsung oleh pendiri kami. Kami siap memberikan arahan komprehensif dalam pengembangan aplikasi, solusi website, inovasi kecerdasan buatan, modifikasi, hingga desain grafis. Percayakan ide Anda kepada kami untuk mewujudkan visi Anda menjadi kenyataan. Hubungi kami untuk informasi lebih lanjut.</p>
+	<!-- Konsultasi button -->
+<button id="consultationBtn" class="consultation-btn">Consult Now!</button>
+</section>
+
+<!-- Consultation Dialog -->
+<div id="consultationDialog" class="dialog-overlay"
+style="display: none;">
+	<div class="dialog-box">
+		<h2>Consult With Us</h2>
+		<ul>
+			<li><a href="https://facebook.com/messages/t/alpharysgroup" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+			<li><a href="https://github.com/Alpharys-Group" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+		</ul>
+		<button id="closeConsultationDialog">Close</button>
+	</div>
+</div>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/6285609405396" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <!-- Project Hub Dialog -->
+    <div id="projectHubDialog" class="dialog-overlay">
+        <div class="dialog-box">
+            <h2>PROJECT HUB</h2>
+            <ul>
+	<li><a href="PROJECT PAGE/appdevpro.html"><i class="fas fa-mobile-alt"></i> APP DEVELOPMENT PROJECT</a></li>
+	<li><a href="PROJECT PAGE/webdevpro.html"><i class="fas fa-globe"></i> WEB DEVELOPMENT PROJECT</a></li>
+	<li><a href="PROJECT PAGE/aidevpro.html"><i class="fas fa-robot"></i> AI DEVELOPMENT PROJECT</a></li>
+	<li><a href="PROJECT PAGE/modsdevpro.html"><i class="fas fa-wrench"></i> MODS DEVELOPMENT PROJECT</a></li>
+	<li><a href="PROJECT PAGE/gradespro.html"><i class="fas fa-palette"></i> GRAPHIC DESIGN PROJECT</a></li>
+</ul>
+<button id="closeDialog">Close</button>
+        </div>
+    </div>
+
+    <!-- Service Dialog -->
+<div id="serviceDialog" class="dialog-overlay">
+	<div class="dialog-box">
+		<h2>OUR SERVICES</h2>
+		<ul>
+			<li><a href="appdevs.html"><i class="fas fa-mobile-alt"></i> APP DEVELOPMENT SERVICES</a></li>
+			<li><a href="webdevs.html"><i class="fas fa-globe"></i> WEB DEVELOPMENT SERVICES</a></li>
+			<li><a href="aidevs.html"><i class="fas fa-robot"></i> AI DEVELOPMENT SERVICES</a></li>
+			<li><a href="moddevs.html"><i class="fas fa-wrench"></i> MOD DEVELOPMENT SERVICES</a></li>
+			<li><a href="sampdevs.html"><i class="fas fa-gamepad"></i> SA-MP DEVELOPMENT SERVICES</a></li>
+			<li><a href="gradess.html"><i class="fas fa-palette"></i> GRAPHIC DESIGN SERVICES</a></li>
+			<li><a href="advcres.html"><i class="fas fa-bullhorn"></i> ADVERTISING CREATION SERVICES</a></li>
+		</ul>
+		<button id="closeServiceDialog">Close</button>
+	</div>
+</div>
+    
+    <!-- SA-MP Dialog -->
+    <div id="sampDialog" class="dialog-overlay">
+        <div class="dialog-box">
+            <h2>SA-MP PROJECT</h2>
+            <ul>
+                <li><a href="sampclients.html">SA-MP CLIENTS</a></li>
+                <li><a href="sampmods.html">SA-MP MODS</a></li>
+                <li><a href="sampservers.html">SA-MP SERVERS</a></li>
+                <li><a href="modsdevpro.html">SA-MP NEWS</a></li>
+                <li><a href="sampcommunity.html">SA-MP COMMUNITY</a></li>
+            </ul>
+            <button id="closeSampDialog">Close</button>
+        </div>
+    </div>
+
+    <!-- Organization Dialog -->
+    <div id="orgDialog" class="dialog-overlay"> <!-- Tambahkan dialog organization -->
+        <div class="dialog-box">
+            <h2>ORGANIZATION</h2>
+            <ul>
+                <li><a href="apptech.html">ALPHARYS APP TECHNOLOGIES</a></li>
+                <li><a href="weblabs.html">ALPHARYS WEB LABS</a></li>
+                <li><a href="smartai.html">ALPHARYS SMART AI</a></li>
+                <li><a href="modderhub.html">ALPHARYS MODDER HUB</a></li>
+                <li><a href="samphub.html">ALPHARYS SA-MP HUB</a></li>
+                <li><a href="creativestudio.html">ALPHARYS CREATIVE STUDIO</a></li>
+            </ul>
+            <button id="closeOrgDialog">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p><i class="fa-regular fa-copyright"></i> 2024 Alpharys Group. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

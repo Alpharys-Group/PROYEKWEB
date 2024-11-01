@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlpharysGroup.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0-beta3/css/all.min.css">
+</head>
+<body>
+	<!-- Audio element with autoplay -->
+<audio id="backgroundMusic" autoplay loop>
+	<source src="audio/musik.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio>
+
+<!-- Control button for play/pause with icon -->
+<div id="musicControl" onclick="toggleMusic()">
+	<i id="musicIcon" class="fas fa-play"></i> <!-- Icon starts as pause -->
+</div>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="Images/logo.png" alt="Alpharys Logo" class="logo">
+            <h1 class="group-name">Alpharys Group</h1>
+        </div>
+        
+        <nav class="navbar">
+	<div class="hamburger" id="hamburger"><i class="fa-sharp-duotone fa-solid fa-list fa-lg"></i></div> <!-- Icon hamburger -->
+            <ul>
+	<li><a href="home.html"><i class="fas fa-home fa-xl"></i> HOME</a></li>
+	<li><a href="info.html"><i class="fas fa-info-circle fa-xl"></i> INFORMATION</a></li>
+	<li><a href="#" id="projectHubBtn"><i class="fas fa-project-diagram fa-xl"></i> PROJECT HUB</a></li>
+	<li><a href="#" id="serviceBtn"><i class="fas fa-concierge-bell fa-xl"></i> SERVICES</a></li>
+	<li><a href="#" id="sampBtn"><i class="fas fa-gamepad fa-xl"></i> SA-MP PRO</a></li>
+	<li><a href="#" id="orgBtn"><i class="fas fa-users fa-xl"></i> ORGANIZATION</a></li>
+	<li><a href="partners.html"><i class="fas fa-handshake fa-xl"></i> PARTNERS</a></li>
+</ul>
+        </nav>
+    </header>
+    
+    <div class="modern-container">
+    <!-- Tentang Kami -->
+    <section class="content-box gradient-background">
+        <h2>ABOUT US</h2>
+        <p>Alpharys Group adalah komunitas pengembangan teknologi dan aplikasi yang saat ini hanya terdiri dari satu orang anggota. Meskipun belum memiliki biaya untuk mendirikan perusahaan, grup ini sangat terbuka untuk siapa saja yang ingin berkontribusi. Bersama, kami berharap dapat mengembangkan grup ini hingga menjadi perusahaan besar di masa depan.</p>
+    </section>
+
+    <!-- Visi -->
+    <section class="content-box gradient-background">
+        <h2>WHAT IS OUR VISION?</h2>
+        <p>Membangun perusahaan teknologi yang berinovasi dalam pengembangan aplikasi, AI, website, modding, dan desain grafis, yang berdampak luas dan mampu bersaing di kancah internasional.</p>
+    </section>
+
+    <!-- Misi -->
+    <section class="content-box gradient-background">
+        <h2>AND WHAT ABOUT OUR MISSION?</h2>
+        <ul>
+            <li>Mengembangkan produk teknologi dan aplikasi yang inovatif serta relevan dengan perkembangan zaman.</li>
+            <li>Menjadi wadah kolaborasi bagi individu-individu yang memiliki minat di bidang teknologi dan pengembangan.</li>
+            <li>Mengutamakan kualitas dan kemudahan akses untuk setiap layanan dan produk yang dihasilkan.</li>
+            <li>Menyediakan jasa pengembangan aplikasi, website, AI, dan desain grafis dengan fokus pada kepuasan pelanggan.</li>
+        </ul>
+    </section>
+
+    <!-- Organisasi -->
+    <section class="content-box gradient-background">
+        <h2>OFFICIAL DIVISIONS IN OUR GROUP:</h2>
+        <ul>
+            <li><strong>Alpharys App Technologies</strong> - Divisi pengembangan aplikasi mobile dan desktop, menciptakan solusi digital untuk berbagai kebutuhan.</li>
+            <li><strong>Alpharys Web Labs</strong> - Mengkhususkan diri dalam pembuatan dan pengembangan website pintar dan fungsional.</li>
+            <li><strong>Alpharys Smart AI</strong> - Berfokus pada penelitian dan pengembangan kecerdasan buatan serta sistem cerdas.</li>
+            <li><strong>Alpharys Modder Hub</strong> - Menyediakan layanan modifikasi untuk aplikasi dan game, dengan inovasi fitur-fitur baru.</li>
+            <li><strong>Alpharys SA-MP Hub</strong> - Berfokus pada komunitas dan pengembangan terkait SA-MP, termasuk mod, server, dan klien SA-MP.</li>
+            <li><strong>Alpharys Creative Studio</strong> - Divisi desain grafis yang mencakup pembuatan logo, ikon, serta layanan editing foto dan video.</li>
+        </ul>
+    </section>
+
+    <!-- Layanan Kami -->
+    <section class="content-box gradient-background">
+        <h2>WHAT SERVICES DO WE PROVIDE?</h2>
+        <ul>
+            <li><strong>Pengembangan Aplikasi</strong> - Kami menawarkan solusi aplikasi untuk platform mobile dan desktop, dirancang dengan kualitas tinggi dan ramah pengguna.</li>
+            <li><strong>Pembuatan Website</strong> - Menyediakan jasa desain dan pengembangan website interaktif dan responsif sesuai dengan kebutuhan klien.</li>
+            <li><strong>Pengembangan AI</strong> - Layanan pembuatan sistem AI, mencakup chatbot, analisis data, dan sistem kecerdasan buatan lainnya.</li>
+            <li><strong>Modding Aplikasi</strong> - Kami menawarkan modifikasi aplikasi dan game untuk menambahkan fitur-fitur kustom sesuai keinginan klien.</li>
+            <li><strong>Desain Grafis</strong> - Menyediakan jasa desain logo, ikon, serta editing foto dan video dengan konsep yang kreatif dan profesional.</li>
+        </ul>
+    </section>
+
+    <!-- Partners -->
+    <section class="content-box gradient-background">
+        <h2>WHO ARE OUR PARTNERS?</h2>
+        <p>Saat ini, Alpharys Group belum memiliki partner, baik individu maupun perusahaan. Namun, kami terbuka untuk kolaborasi dengan berbagai pihak yang memiliki tujuan yang sama untuk kemajuan di bidang teknologi.</p>
+    </section>
+</div>
+    
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/6285609405396" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <!-- Project Hub Dialog -->
+<div id="projectHubDialog" class="dialog-overlay">
+	<div class="dialog-box">
+		<h2>PROJECT HUB</h2>
+		<ul>
+			<li><a href="PROJECT PAGE/appdevpro.html"><i class="fas fa-mobile-alt"></i> APP DEVELOPMENT PROJECT</a></li>
+			<li><a href="PROJECT PAGE/webdevpro.html"><i class="fas fa-globe"></i> WEB DEVELOPMENT PROJECT</a></li>
+			<li><a href="PROJECT PAGE/aidevpro.html"><i class="fas fa-robot"></i> AI DEVELOPMENT PROJECT</a></li>
+			<li><a href="PROJECT PAGE/modsdevpro.html"><i class="fas fa-wrench"></i> MODS DEVELOPMENT PROJECT</a></li>
+			<li><a href="PROJECT PAGE/gradespro.html"><i class="fas fa-palette"></i> GRAPHIC DESIGN PROJECT</a></li>
+		</ul>
+		<button id="closeDialog">Close</button>
+	</div>
+</div>
+
+    <!-- Service Dialog -->
+<div id="serviceDialog" class="dialog-overlay">
+	<div class="dialog-box">
+		<h2>OUR SERVICES</h2>
+		<ul>
+			<li><a href="appdevs.html"><i class="fas fa-mobile-alt"></i> APP DEVELOPMENT SERVICES</a></li>
+			<li><a href="webdevs.html"><i class="fas fa-globe"></i> WEB DEVELOPMENT SERVICES</a></li>
+			<li><a href="aidevs.html"><i class="fas fa-robot"></i> AI DEVELOPMENT SERVICES</a></li>
+			<li><a href="moddevs.html"><i class="fas fa-wrench"></i> MOD DEVELOPMENT SERVICES</a></li>
+			<li><a href="sampdevs.html"><i class="fas fa-gamepad"></i> SA-MP DEVELOPMENT SERVICES</a></li>
+			<li><a href="gradess.html"><i class="fas fa-palette"></i> GRAPHIC DESIGN SERVICES</a></li>
+			<li><a href="advcres.html"><i class="fas fa-bullhorn"></i> ADVERTISING CREATION SERVICES</a></li>
+		</ul>
+		<button id="closeServiceDialog">Close</button>
+	</div>
+</div>
+    
+    <!-- SA-MP Dialog -->
+    <div id="sampDialog" class="dialog-overlay">
+        <div class="dialog-box">
+            <h2>SA-MP PROJECT</h2>
+            <ul>
+                <li><a href="sampclients.html">SA-MP CLIENTS</a></li>
+                <li><a href="sampmods.html">SA-MP MODS</a></li>
+                <li><a href="sampservers.html">SA-MP SERVERS</a></li>
+                <li><a href="modsdevpro.html">SA-MP NEWS</a></li>
+                <li><a href="sampcommunity.html">SA-MP COMMUNITY</a></li>
+            </ul>
+            <button id="closeSampDialog">Close</button>
+        </div>
+    </div>
+
+    <!-- Organization Dialog -->
+    <div id="orgDialog" class="dialog-overlay"> <!-- Tambahkan dialog organization -->
+        <div class="dialog-box">
+            <h2>ORGANIZATION</h2>
+            <ul>
+                <li><a href="apptech.html">ALPHARYS APP TECHNOLOGIES</a></li>
+                <li><a href="weblabs.html">ALPHARYS WEB LABS</a></li>
+                <li><a href="smartai.html">ALPHARYS SMART AI</a></li>
+                <li><a href="modderhub.html">ALPHARYS MODDER HUB</a></li>
+                <li><a href="samphub.html">ALPHARYS SA-MP HUB</a></li>
+                <li><a href="creativestudio.html">ALPHARYS CREATIVE STUDIO</a></li>
+            </ul>
+            <button id="closeOrgDialog">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p><i class="fa-regular fa-copyright"></i> 2024 Alpharys Group. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
